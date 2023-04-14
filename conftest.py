@@ -1,9 +1,8 @@
 import pytest
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service as ChromeService
-import time
+
 
 #  фикстура для открытия и закрытия браузера
 @pytest.fixture(scope="function")
