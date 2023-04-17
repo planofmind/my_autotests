@@ -4,7 +4,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 
 
-#  фикстура для открытия и закрытия браузера
 @pytest.fixture(scope="function")
 def driver():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
